@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ABB', endColorstr='#00FFEB', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "about"
+    "projects"
+    "footer";
+    gap: 20px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    grid-area: nav;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* Center the text inside the section elements */
+    font-size: larger;
+}
+
+section ul {
+    text-align: center;
+    padding-left: 0;
+    list-style-position: inside; /* Align the list bullet points properly */
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+}
+
+#about img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
